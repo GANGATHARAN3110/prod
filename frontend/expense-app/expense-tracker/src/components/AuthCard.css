@@ -1,0 +1,50 @@
+/* Center the auth card vertically and horizontally */
+.auth-page {
+  min-height: 75vh;          /* Full viewport height */
+  display: flex;              /* Flex container */
+  align-items: center;        /* Vertical centering */
+  justify-content: center;    /* Horizontal centering */
+  background: #f8f9fa;        /* Light grey background */
+  padding: 20px;
+}
+
+/* Card container */
+.auth-card {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.auth-card h2 {
+  font-weight: 700;
+  color: #343a40;
+  text-align: center;
+}
+
+/* Inputs */
+.auth-card .form-control {
+  border-radius: 8px;
+  padding: 10px 12px;
+  transition: box-shadow 0.2s ease;
+}
+
+.auth-card .form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Buttons */
+.auth-card .btn {
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: 500;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.auth-card .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}

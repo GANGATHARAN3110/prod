@@ -1,0 +1,142 @@
+/* ================= Navbar Container ================= */
+.navbar {
+  background: #6c757d; /* Grey navbar */
+  color: #fff;
+  padding: 12px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Navbar inner flex container */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* ================= Logo ================= */
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.2s ease;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.05);
+}
+
+/* ================= Navigation Links ================= */
+.navbar-links {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+/* Each nav item */
+.nav-item {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Hover state */
+.nav-item:hover {
+  background: #5a6268; /* slightly darker grey */
+  transform: translateY(-2px);
+}
+
+/* Active nav item */
+.nav-item.active {
+  background: #495057; /* dark grey */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* ================= Navbar Actions (Login Button) ================= */
+.navbar-actions .btn {
+  background: #17a2b8; /* blue button for contrast */
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-actions .btn:hover {
+  background: #138496; /* darker blue on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* ================= Responsive Adjustments ================= */
+@media (max-width: 768px) {
+  .navbar-links {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar-actions {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+.navbar-actions .btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  margin-left: 8px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn-login {
+  background: #17a2b8; /* blue */
+}
+
+.btn-login:hover {
+  background: #138496;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.btn-register {
+  background: #1cc88a; /* green */
+}
+
+.btn-register:hover {
+  background: #17a673;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
